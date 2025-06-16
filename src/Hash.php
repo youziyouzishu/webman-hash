@@ -1,6 +1,6 @@
 <?php
 
-namespace yzh52521\hash;
+namespace youziyouzishu\hash;
 
 /**
  * @method static array info(string $hashedValue)
@@ -17,7 +17,7 @@ class Hash
     public static function instance()
     {
         if (!static::$_instance) {
-            static::$_instance = new \yzh52521\hash\hashing\Hash();
+            static::$_instance = new \youziyouzishu\hash\hashing\Hash();
         }
         return static::$_instance;
     }

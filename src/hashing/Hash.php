@@ -1,6 +1,6 @@
 <?php
 
-namespace yzh52521\hash\hashing;
+namespace youziyouzishu\hash\hashing;
 
 use Illuminate\Contracts\Hashing\Hasher;
 use Illuminate\Hashing\Argon2IdHasher;
@@ -97,7 +97,7 @@ class Hash implements Hasher
      */
     public function getDefaultDriver()
     {
-        return config('plugin.yzh52521.hashing.app.driver', 'bcrypt');
+        return config('plugin.youziyouzishu.hashing.app.driver', 'bcrypt');
     }
 
     /**
@@ -107,7 +107,7 @@ class Hash implements Hasher
      */
     public function createBcryptDriver()
     {
-        return new BcryptHasher(config('plugin.yzh52521.hashing.app.bcrypt') ?? []);
+        return new BcryptHasher(config('plugin.youziyouzishu.hashing.app.bcrypt') ?? []);
     }
 
     /**
@@ -117,9 +117,8 @@ class Hash implements Hasher
      */
     public function createArgonDriver()
     {
-        return new ArgonHasher(config('plugin.yzh52521.hashing.app.argon') ?? []);
+        return new ArgonHasher(config('plugin.youziyouzishu.hashing.app.argon') ?? []);
     }
-
     /**
      * Create an instance of the Argon2id hash Driver.
      *
@@ -127,7 +126,7 @@ class Hash implements Hasher
      */
     public function createArgon2idDriver()
     {
-        return new Argon2IdHasher(config('plugin.yzh52521.hashing.app.argon') ?? []);
+        return new Argon2IdHasher(config('plugin.youziyouzishu.hashing.app.argon') ?? []);
     }
 
     /**

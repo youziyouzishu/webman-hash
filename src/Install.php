@@ -1,6 +1,6 @@
 <?php
 
-namespace yzh52521\hash;
+namespace youziyouzishu\hash;
 
 class Install
 {
@@ -10,7 +10,7 @@ class Install
      * @var array
      */
     protected static $pathRelation = array(
-        'config/plugin/yzh52521/hashing' => 'config/plugin/yzh52521/hashing',
+        'config/plugin/youziyouzishu/hashing' => 'config/plugin/youziyouzishu/hashing',
     );
 
     /**
